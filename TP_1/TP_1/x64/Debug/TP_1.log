@@ -1,1 +1,2 @@
-﻿  TP_1.vcxproj -> C:\Users\79284\source\repos\TP_1\x64\Debug\TP_1.exe
+﻿main.obj : error LNK2001: неразрешенный внешний символ "public: static int Submarines::Ggg" (?Ggg@Submarines@@2HA).
+C:\Users\79284\source\repos\TP_1\x64\Debug\TP_1.exe : fatal error LNK1120: неразрешенных внешних элементов: 1

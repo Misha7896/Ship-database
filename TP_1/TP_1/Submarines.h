@@ -1,11 +1,12 @@
 #pragma once
 #include "Ship.h"
-//#include <string>
-//#include <iostream>
 
 class Submarines :public Ship
 {
+private:
+	int id;
 public:
+	static int Ggg;
 	float length;						// длина
 	float width;						// ширина
 	//int crew;							// экипаж
@@ -14,6 +15,25 @@ public:
 	float MaximumUnderwaterSpeed;		// максимальная подводная скорость
 	int armament;						// ед. вооружения
 
+	Submarines()
+	{
+		Ggg++;
+		id = Ggg + 1000;
+	}
+
+
+	void GetInfo()
+	{
+
+		ofstream fout("InfoSubmarines.txt", ios::app);
+		fout << "Submarine (id: " << id << ")" << endl;
+
+		cout << "Enter the length:" << endl;
+		cin >> length;
+		fout << "length = " << length << endl;
+
+
+	}
 
 };
 

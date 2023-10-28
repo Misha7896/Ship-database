@@ -1,7 +1,5 @@
 #pragma once
 #include "Ship.h"
-//#include <string>
-//#include <iostream>
 
 class Sailboats :public Ship
 {
