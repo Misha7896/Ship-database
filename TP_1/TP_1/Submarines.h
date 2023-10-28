@@ -6,7 +6,7 @@ class Submarines :public Ship
 private:
 	int id;
 public:
-	static int Ggg;
+	//static int Ggg;
 	float length;						// длина
 	float width;						// ширина
 	//int crew;							// экипаж
