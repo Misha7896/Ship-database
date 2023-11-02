@@ -1,12 +1,10 @@
 #pragma once
-#include "Ship.h"
+#include "Base.h"
 
 class Submarines :public Ship
 {
 private:
 	int id;
-public:
-	//static int Ggg;
 	float length;						// длина
 	float width;						// ширина
 	//int crew;							// экипаж
@@ -15,11 +13,25 @@ public:
 	float MaximumUnderwaterSpeed;		// максимальная подводная скорость
 	int armament;						// ед. вооружения
 
+public:
+	//static int Count;
 	Submarines()
 	{
-		Ggg++;
-		id = Ggg + 1000;
+		cout << "\nSubmarines();" << endl;
+		//Count++;
+		//id = Count + 1000;
 	}
+
+	float GetLength()
+	{
+		return length;
+	}
+
+	void SetLength()
+	{
+		cout << "length" << length << endl;
+	}
+
 
 
 	void GetInfo()
@@ -37,3 +49,4 @@ public:
 
 };
 
+//int Submarines::Count = 0;
