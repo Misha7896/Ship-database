@@ -4,6 +4,9 @@
 class Submarines :public Ship
 {
 private:
+	string Base = "Submarines";
+	string ParamLength = "length";
+
 	int id;
 	float length;						// длина
 	float width;						// ширина
@@ -33,9 +36,11 @@ public:
 	}
 
 
+	friend void MainFoo(string Base, string parameter, float& Param);
 
 	void GetInfo()
 	{
+		MainFoo(Base, ParamLength, length);
 
 		ofstream fout("InfoSubmarines.txt", ios::app);
 		fout << "Submarine (id: " << id << ")" << endl;
@@ -45,6 +50,8 @@ public:
 		fout << "length = " << length << endl;
 
 
+
+		fout.close();
 	}
 
 };
