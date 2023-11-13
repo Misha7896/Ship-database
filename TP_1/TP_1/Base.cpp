@@ -1,5 +1,6 @@
 #include "Base.h"
 
+
 void MainFoo(string Base, string parameter, float& Param)
 {
 	cout << parameter;

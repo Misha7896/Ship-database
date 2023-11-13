@@ -12,7 +12,8 @@ private:
 	float speed;	// скорость на воде
 
 public:
-	friend void MainFoo(string Base, string parameter, float& Param);
+	//friend void MainFoo(string Base, string parameter, float& Param);
+	
 
 };
 

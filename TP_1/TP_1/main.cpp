@@ -21,6 +21,7 @@ using namespace std;
 int main(void)
 {
 	int BUTTON;
+	//Ship Sh;
 	Submarines Su;
 	Sailboats Sa;
 	Boats Bo;
