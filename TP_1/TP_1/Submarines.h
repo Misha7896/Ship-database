@@ -1,11 +1,12 @@
 #pragma once
-#include "Base.h"
+#include "ShipBase.h"
+
 
 
 void GetInfor(string StringParam, int& Param);
 void ReadingValues(char str[], int& Param);
 
-class Submarines :public Ship
+class Submarines :public ShipBase
 {
 protected:
 	//string Base = "Submarine";
@@ -42,7 +43,7 @@ public:
 
 
 	void GetInfo();
-	void ToChange();
+	void ToChange(Submarines* Su);
 
 	friend class Keeper;
 };

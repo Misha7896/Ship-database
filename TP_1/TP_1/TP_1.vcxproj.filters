@@ -27,10 +27,10 @@
     <ClCompile Include="Boats.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Base.cpp">
+    <ClCompile Include="Keeper.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Keeper.cpp">
+    <ClCompile Include="ShipBase.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
@@ -44,10 +44,10 @@
     <ClInclude Include="Boats.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Base.h">
+    <ClInclude Include="Keeper.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Keeper.h">
+    <ClInclude Include="ShipBase.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,10 +1,10 @@
 #pragma once
-#include "Base.h"
+#include "ShipBase.h"
 
 
 void GetInfor(string StringParam, int& Param);
 
-class Sailboats :public Ship
+class Sailboats :public ShipBase
 {
 protected:
 	//string Base = "Sailboat";
