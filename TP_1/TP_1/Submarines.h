@@ -1,48 +1,50 @@
 #pragma once
 #include "Base.h"
-#include "Base.cpp"
+
+
+void GetInfor(string StringParam, int& Param);
+void ReadingValues(char str[], int& Param);
 
 class Submarines :public Ship
 {
-private:
-	string Base = "Submarines";
-	string ParamLength = "length";
-	
-	int id;
-	float length;						// длина
-	float width;						// ширина
-	//int crew;							// экипаж
-	float TimeUnderWater;				// время под водой
-	//float MaximumSpeedOnTheWater;		// максимальная скорость на воде
-	float MaximumUnderwaterSpeed;		// максимальная подводная скорость
+protected:
+	//string Base = "Submarine";
+
+	int length;						// длина
+	int width;						// ширина
+	int TimeUnderWater;				// время под водой
+	//int MaxSpeedOnTheWater;		// максимальная скорость на воде
+	int MaxUnderwaterSpeed;		// максимальная подводная скорость
 	int armament;						// ед. вооружения
 
 public:
-	//static int Count;
 	Submarines()
 	{
 		cout << "\nSubmarines();" << endl;
-		//Count++;
-		//id = Count + 1000;
 	}
-
-	float GetLength()
-	{
-		return length;
-	}
-
-	void SetLength()
-	{
-		cout << "length" << length << endl;
-	}
-
-
-	friend void MainFoo(string Base, string parameter, float& Param);
-
-	friend void GetInfo(string Base, string parameter, float& Param, string ParamLength, float length);
-
 	
+	int GetCountSu();
+	void SetCountSu();
+	int GetLength();
+	void SetLength();
+	int GetWidth();
+	void SetWidth();
+	int GetCrewSu();
+	void SetCrewSu();
+	int GetTimeUnderWater();
+	void SetTimeUnderWater();
+	int GetSpeedSu();
+	void SetSpeedSu();
+	int GetMaxUnderwaterSpeed();
+	void SetMaxUnderwaterSpeed();
+	int GetArmament();
+	void SetArmament();
 
+
+	void GetInfo();
+	void ToChange();
+
+	friend class Keeper;
 };
 
 //int Submarines::Count = 0;

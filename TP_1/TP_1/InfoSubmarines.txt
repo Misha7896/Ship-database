@@ -1,4 +1,319 @@
-Submarine (id: -858993460)
+1)Submarine (id: id)
+length = 0
+
+2)Submarine (id: id)
+length = 0
+
+Submarine (id: id)
 length = 45
-Submarine (id: -858993460)
+
+Submarine (id: id)
+length = 78
+
+4)Submarine (id: id)
+Submarine (id: id)
+length = 42
+
+Submarine (id: id)
+length = 0
+
+Submarine (id: id)
+length = 0
+
+Submarine (id: id)
+length = 0
+
+Submarine (id: id)
+length = 0
+
+Submarine (id: id)
+Submarine (id: id)
+length = 44
+
+Submarine (id: id)
+length = 0
+
+Submarine (id: id)
+Submarine (id: id)
+length = 48
+
+Submarine (id: id)
+Submarine (id: id)
+Submarine (id: id)
+Submarine (id: id)
+Submarine (id: id)
+length = 51
+
+Submarine (id: id)
+Submarine (id: id)
+Submarine (id: id)
+Submarine (id: id)
+Submarine (id: id)
+Submarine (id: id)
+Submarine (id: id)
+Submarine (id: id)
+Submarine (id: id)
+Submarine (id: id)
+Submarine (id: id)
+Submarine (id: id)
+Submarine (id: id)
+length = 8
+
+Submarine (id: id)
+Submarine (id: id)
+length = 4
+
+Submarine (id: id)
+Submarine (id: id)
+length = 8
+
+Submarine (id: id)
+length = 5
+
+Submarine (id: id)
+length = 2
+
+Submarine (id: id)
+length = 568
+
+Submarine (id: id)
+length = 45
+
+Submarine (id: id)
+length = 452
+
+Submarine (id: id)
+length = 12
+
+Submarine (id: id)
+width = 14
+
+Submarine (id: id)
+TimeUnderWater = 78
+
+Submarine (id: id)
+MaxUnderwaterSpeed = 45
+
+Submarine (id: id)
+armament = 54
+
+Submarine (id: id)
+length = 78
+
+Submarine (id: id)
+width = 75
+
+Submarine (id: id)
+TimeUnderWater = 74
+
+Submarine (id: id)
+MaxUnderwaterSpeed = 41
+
+Submarine (id: id)
+armament = 12
+
+Submarine (id: id)
 length = 87
+
+Submarine (id: id)
+width = 94
+
+Submarine (id: id)
+TimeUnderWater = 54
+
+Submarine (id: id)
+MaxUnderwaterSpeed = 62
+
+Submarine (id: id)
+armament = 84
+
+Submarine (id: id)
+Submarine (id: id)
+Submarine (id: id)
+length = 45
+
+Submarine (id: id)
+width = 78
+
+Submarine (id: id)
+TimeUnderWater = 64
+
+Submarine (id: id)
+MaxUnderwaterSpeed = 54
+
+Submarine (id: id)
+armament = 12
+
+Submarine (id: id)
+length = 45
+
+width = 54
+
+Submarine (id: id)
+length = 45
+width = 24
+Submarine (id: id)
+length = 4
+width = 5
+TimeUnderWater = 7
+MaxUnderwaterSpeed = 5
+armament = 4
+Submarine (id: id)
+length = 4
+width = 5
+TimeUnderWater = 6
+MaxUnderwaterSpeed = 1
+armament = 2
+
+Submarine (id: id)
+length = 1
+width = 2
+TimeUnderWater = 3
+MaxUnderwaterSpeed = 4
+armament = 5
+
+
+Sailboat (id: id)
+TypeOfSailboat = Ggggg
+title = Bbbb
+Sailboat (id: id)
+TypeOfSailboat = Ffff
+title = Dddd
+PeacefulOrMilitary = 1
+BodyLength = 45
+
+
+Sailboat (id: id)
+TypeOfSailboat = Eeee
+title = Rrrr
+PeacefulOrMilitary = 1
+BodyLength = 4
+
+
+Sailboat (id: id)
+TypeOfSailboat = Hhhh
+title = Gggg
+PeacefulOrMilitary = 1
+PeacefulOrMilitary = 1
+Sailboat (id: id)
+TypeOfSailboat = Jjjj
+title = Yyyy
+PeacefulOrMilitary = 1
+BodyLength = 7
+
+
+Sailboat (id: id)
+TypeOfSailboat = Jjjj
+title = Yyyy
+PeacefulOrMilitary = 1
+Sailboat (id: id)
+TypeOfSailboat = Ddd
+title = Ssss
+PeacefulOrMilitary = 1
+BodyLength = 4
+
+
+9123)Sailboat (id: id)
+TypeOfSailboat = Ddd
+title = Ssss
+PeacefulOrMilitary = 1
+BodyLength = 4
+
+
+9123)Submarine:
+length = 4
+width = 7
+TimeUnderWater = 5
+MaxUnderwaterSpeed = 2
+armament = 1
+
+
+9124)Submarine:
+length = 4
+width = 5
+TimeUnderWater = 8
+MaxUnderwaterSpeed = 6
+armament = 1
+
+
+9125)Submarine:
+length = 5
+width = 4
+TimeUnderWater = 7
+MaxUnderwaterSpeed = 8
+armament = 9
+
+
+9126)Submarine:
+length = 1
+width = 1
+TimeUnderWater = 1
+MaxUnderwaterSpeed = 1
+armament = 1
+
+
+9127)Submarine:
+length = 2
+width = 2
+TimeUnderWater = 2
+MaxUnderwaterSpeed = 2
+armament = 2
+
+
+9128)Submarine:
+length = 3
+width = 3
+TimeUnderWater = 3
+MaxUnderwaterSpeed = 3
+armament = 3
+
+
+9129)Submarine:
+length = 4
+width = 4
+TimeUnderWater = 4
+MaxUnderwaterSpeed = 4
+armament = 4
+
+9130)Submarine:
+length = 5
+width = 5
+TimeUnderWater = 5
+MaxUnderwaterSpeed = 5
+armament = 5
+
+9131)Submarine:
+length = 6
+width = 6
+TimeUnderWater = 6
+MaxUnderwaterSpeed = 6
+armament = 6
+
+0)Submarine:
+length = -858993460
+width = -858993460
+crew = -858993460
+TimeUnderWater = -858993460
+speed = -858993460
+MaxUnderwaterSpeed = -858993460
+armament = -858993460
+
+0)Submarine:
+1)Submarine:
+length = 11
+width = 11
+crew = 11
+TimeUnderWater = 11
+speed = 11
+MaxUnderwaterSpeed = 11
+armament = 11
+
+2)Submarine:
+length = 89
+width = 4
+crew = 4
+TimeUnderWater = 4
+speed = 4
+MaxUnderwaterSpeed = 4
+armament = 4
+
