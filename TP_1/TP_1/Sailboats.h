@@ -1,8 +1,8 @@
 #pragma once
 #include "ShipBase.h"
 
-
-void GetInfor(string StringParam, int& Param);
+//void GetInfor(string StringParam, int& Param, string& Par);
+//void ReadingValues(char str[], int& Param, string Par);
 
 class Sailboats :public ShipBase
 {
@@ -37,7 +37,8 @@ public:
 	void SetCrewSa();
 
 
-	void GetInfo();
+	void GetAddSa();
+	void ToChangeSa(Sailboats* Sa, bool del);
 
 	friend class Keeper;
 };

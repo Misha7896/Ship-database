@@ -3,8 +3,8 @@
 
 
 
-void GetInfor(string StringParam, int& Param);
-void ReadingValues(char str[], int& Param);
+void GetInfor(string StringParam, int& Param, string& Par);
+void ReadingValues(char str[], int& Param, string& Par);
 
 class Submarines :public ShipBase
 {
@@ -42,8 +42,8 @@ public:
 	void SetArmament();
 
 
-	void GetInfo();
-	void ToChange(Submarines* Su);
+	void GetAddSu();
+	void ToChangeSu(Submarines* Su, bool del);
 
 	friend class Keeper;
 };

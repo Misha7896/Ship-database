@@ -1,6 +1,6 @@
 #include "Submarines.h"
-//#include <stdexcept>
 #include "Keeper.h"
+//#include <stdexcept>
 
 int Submarines::GetCountSu()
 {
@@ -67,7 +67,7 @@ void Submarines::SetArmament()
 	cout << "armament = " << armament << endl;
 }
 
-void Submarines::GetInfo()
+void Submarines::GetAddSu()
 {
 	ifstream fin("InfoSubmarines.txt", ios::in);
 	if (!fin.is_open()) cout << "Error: the file did not open!" << endl;
@@ -85,22 +85,27 @@ void Submarines::GetInfo()
 
 	count++;
 
-	GetInfor("length", length);
-	GetInfor("width", width);
-	GetInfor("crew", crew);
-	GetInfor("TimeUnderWater", TimeUnderWater);
-	GetInfor("speed", speed);
-	GetInfor("MaxUnderwaterSpeed", MaxUnderwaterSpeed);
-	GetInfor("armament", armament);
+	GetInfor("length", length, ZEROstr);
+	GetInfor("width", width, ZEROstr);
+	GetInfor("crew", crew, ZEROstr);
+	GetInfor("TimeUnderWater", TimeUnderWater, ZEROstr);
+	GetInfor("speed", speed, ZEROstr);
+	GetInfor("MaxUnderwaterSpeed", MaxUnderwaterSpeed, ZEROstr);
+	GetInfor("armament", armament, ZEROstr);
 }
 
-void Submarines::ToChange(Submarines* Su)
+void Submarines::ToChangeSu(Submarines* Su, bool del)
 {
+	// Параметр del нужен для реализации удаления корабля
 	ifstream fin2("InfoSubmarines.txt", ios::in);
 	if (!fin2.is_open()) cout << "Error: the file did not open!" << endl;
 	else
 	{
-		cout << "\nSelect the submarine whose parameters you want to change\n" << endl;
+		if(!del)
+			cout << "\nSelect the submarine whose parameters you want to CHANGE\n" << endl;
+		else
+			cout << "\nSelect the submarine whose parameters you want to DELETE\n" << endl;
+
 		char str[100];
 
 		int size = 1000;			// Длина массива
@@ -147,9 +152,11 @@ void Submarines::ToChange(Submarines* Su)
 
 			while (repeat)
 			{
-				GetInfor("its number", c);
+				GetInfor("its number", c, ZEROstr);
 
 				count = 0;
+				fin.clear();
+				fin.seekg(0, ios_base::beg);
 
 				while (fin.getline(str, lenghArray))
 				{
@@ -166,88 +173,81 @@ void Submarines::ToChange(Submarines* Su)
 				}
 			}
 
-			cout << str << endl;
-
-			// Вывожу на экран и запоминаю значения переменных
-			fin.getline(str, lenghArray);
-			cout << "1. " << str << endl;
-			ReadingValues(str, length);
-
-			fin.getline(str, lenghArray);
-			cout << "2. " << str << endl;
-			ReadingValues(str, width);
-
-			fin.getline(str, lenghArray);
-			cout << "3. " << str << endl;
-			ReadingValues(str, crew);
-
-			fin.getline(str, lenghArray);
-			cout << "4. " << str << endl;
-			ReadingValues(str, TimeUnderWater);
-
-			fin.getline(str, lenghArray);
-			cout << "5. " << str << endl;
-			ReadingValues(str, speed);
-
-			fin.getline(str, lenghArray);
-			cout << "6. " << str << endl;
-			ReadingValues(str, MaxUnderwaterSpeed);
-
-			fin.getline(str, lenghArray);
-			cout << "7. " << str << endl;
-			ReadingValues(str, armament);
-
-
-			char BUTTON;
-			bool flag;
-			do
+			if (!del)
 			{
-				flag = false;
-				cout << "\nEnter the parameter number: ";
+				cout << str << endl;
+				// Вывожу на экран и запоминаю значения переменных
+				fin.getline(str, lenghArray);
+				cout << "1. " << str << endl;
+				ReadingValues(str, length, ZEROstr);
 
-				BUTTON = _getch();
-				cout << BUTTON << endl;
+				fin.getline(str, lenghArray);
+				cout << "2. " << str << endl;
+				ReadingValues(str, width, ZEROstr);
 
-				// Изменняю выбранный параметр
-				switch (BUTTON)
+				fin.getline(str, lenghArray);
+				cout << "3. " << str << endl;
+				ReadingValues(str, crew, ZEROstr);
+
+				fin.getline(str, lenghArray);
+				cout << "4. " << str << endl;
+				ReadingValues(str, TimeUnderWater, ZEROstr);
+
+				fin.getline(str, lenghArray);
+				cout << "5. " << str << endl;
+				ReadingValues(str, speed, ZEROstr);
+
+				fin.getline(str, lenghArray);
+				cout << "6. " << str << endl;
+				ReadingValues(str, MaxUnderwaterSpeed, ZEROstr);
+
+				fin.getline(str, lenghArray);
+				cout << "7. " << str << endl;
+				ReadingValues(str, armament, ZEROstr);
+
+
+				char BUTTON;
+				bool flag;
+				do
 				{
-				case '1':
-					GetInfor("length = ", length);
-					break;
+					flag = false;
+					cout << "\nEnter the parameter number: ";
 
-				case '2':
-					GetInfor("width", width);
-					break;
+					BUTTON = _getch();
+					cout << BUTTON << endl;
 
-				case '3':
-					GetInfor("crew", crew);
-					break;
-
-				case '4':
-					GetInfor("TimeUnderWater", TimeUnderWater);
-					break;
-
-				case '5':
-					GetInfor("speed", speed);
-					break;
-
-				case '6':
-					GetInfor("MaxUnderwaterSpeed", MaxUnderwaterSpeed);
-					break;
-
-				case '7':
-					GetInfor("armament", armament);
-					break;
-
-				default:
-					flag = true;
-				}
-
-			} while (flag);
+					// Изменняю выбранный параметр
+					switch (BUTTON)
+					{
+					case '1':
+						GetInfor("length", length, ZEROstr);
+						break;
+					case '2':
+						GetInfor("width", width, ZEROstr);
+						break;
+					case '3':
+						GetInfor("crew", crew, ZEROstr);
+						break;
+					case '4':
+						GetInfor("TimeUnderWater", TimeUnderWater, ZEROstr);
+						break;
+					case '5':
+						GetInfor("speed", speed, ZEROstr);
+						break;
+					case '6':
+						GetInfor("MaxUnderwaterSpeed", MaxUnderwaterSpeed, ZEROstr);
+						break;
+					case '7':
+						GetInfor("armament", armament, ZEROstr);
+						break;
+					default:
+						flag = true;
+					}
+				} while (flag);
+			}
 
 			// Перезаписываю фаил с полученными изменениями
 			//if (!fout.is_open()) cout << "Error: the file did not open!" << endl;
-
 			bool flagArray = true;
 
 			ofstream fout4("InfoSubmarines.txt", ios::trunc);
@@ -263,7 +263,7 @@ void Submarines::ToChange(Submarines* Su)
 
 				if (count == c)
 				{
-					if(flagArray)
+					if(flagArray && !del)
 					{
 						Keeper Ke;
 						Ke.SaveSub(Su);
@@ -280,14 +280,9 @@ void Submarines::ToChange(Submarines* Su)
 				}
 				fout.close();
 			}
-
-
 			//fout.close();
-
-
 		}
 		fin.close();
 	}
 	fin2.close();
 }
-

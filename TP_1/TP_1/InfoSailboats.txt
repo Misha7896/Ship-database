@@ -1,112 +1,24 @@
-Sailboat (id: id)
-TypeOfSailboat = Eeee
-title = Rrrr
-PeacefulOrMilitary = 1
-BodyLength = 4
-
-
-Sailboat (id: id)
-TypeOfSailboat = Eeee
-title = Rrrr
-PeacefulOrMilitary = 1
-BodyLength = 47
-
-
-Sailboat (id: id)
-TypeOfSailboat = Fff
-title = Rrrr
-PeacefulOrMilitary = 1
-BodyLength = 4
-
-
-Sailboat (id: id)
-TypeOfSailboat = Kkkk
-title = Eeee
-PeacefulOrMilitary = 1
-BodyLength = 5
-
-
-Sailboat (id: id)
-TypeOfSailboat = Ffff
-title = Rrr
-Sailboat (id: id)
-TypeOfSailboat = Ccc
-title = Vvvv
-PeacefulOrMilitary = 1
-BodyLength = 4
-
-
-Sailboat (id: id)
-Sailboat (id: id)
-TypeOfSailboat = ‚¢¢¢
-title = ›ëëë
-PeacefulOrMilitary = 1
-BodyLength = 7
-
-
-Sailboat (id: id)
-TypeOfSailboat = Jjj
-title = Dddd
-PeacefulOrMilitary = 1
-BodyLength = 3
-
-
-Sailboat (id: id)
-TypeOfSailboat = Eeee
-title = WWWww
-PeacefulOrMilitary = 1
-BodyLength = 4
-
-
-Sailboat (id: id)
-TypeOfSailboat = Eee
-title = Dddd
-PeacefulOrMilitary = 1
-BodyLength = 54
-
-
-Sailboat (id: id)
-TypeOfSailboat = Rrrr
-title = Tttt
-PeacefulOrMilitary = 1
-BodyLength = 4
-
-
-Sailboat (id: id)
-Sailboat (id: id)
-TypeOfSailboat = DDddd
-title = Eee
-PeacefulOrMilitary = 0
-BodyLength = 45
-
-
-Sailboat (id: id)
-TypeOfSailboat = Rrr
-title = Eeee
-PeacefulOrMilitary = 1
-BodyLength = 212
-
-
-Sailboat (id: id)
-TypeOfSailboat = ggg
-title = dfdf
-PeacefulOrMilitary = 1
-BodyLength = 23
-
-
-0)Sailboats:
-TypeOfSailboat = 
-title = 
-PeacefulOrMilitary = 204
-BodyLength = -858993460
-MovementSpeed = -858993460
-crew = -858993460
-
 1)Sailboats:
-TypeOfSailboat = 11
-title = 11
+TypeOfSailboat = Parys
+title = Ky
 PeacefulOrMilitary = 1
-BodyLength = 11
-MovementSpeed = 11
-crew = 11
+BodyLength = 1
+speed = 1
+crew = 1
+
+2)Sailboats:
+TypeOfSailboat = 2
+title = 2
+PeacefulOrMilitary = 1
+BodyLength = 2
+speed = 2
+crew = 2
+
+3)Sailboats:
+TypeOfSailboat = 3
+title = 3
+PeacefulOrMilitary = 0
+BodyLength = 3
+speed = 3
+crew = 3
 

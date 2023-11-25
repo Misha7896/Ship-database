@@ -51,4 +51,9 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="InfoSubmarines.txt" />
+    <Text Include="InfoBoats.txt" />
+    <Text Include="InfoSailboats.txt" />
+  </ItemGroup>
 </Project>

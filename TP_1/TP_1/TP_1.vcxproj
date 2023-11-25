@@ -141,6 +141,11 @@
     <ClInclude Include="ShipBase.h" />
     <ClInclude Include="Submarines.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="InfoBoats.txt" />
+    <Text Include="InfoSailboats.txt" />
+    <Text Include="InfoSubmarines.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

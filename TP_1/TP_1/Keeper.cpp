@@ -25,7 +25,7 @@ void Keeper::SaveSail(Sailboats* Sa)
 	fout << "title = " << Sa->GetTitle() << endl;
 	fout << "PeacefulOrMilitary = " << Sa->GetPeacefulOrMilitary() << endl;
 	fout << "BodyLength = " << Sa->GetBodyLength() << endl;
-	fout << "MovementSpeed = " << Sa->GetSpeedSa() << endl;
+	fout << "speed = " << Sa->GetSpeedSa() << endl;
 	fout << "crew = " << Sa->GetCrewSa() << endl;
 	fout << endl;
 	fout.close();
