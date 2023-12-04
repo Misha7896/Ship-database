@@ -1,0 +1,11 @@
+﻿  Boats.cpp
+  Keeper.cpp
+  Sailboats.cpp
+  ShipBase.cpp
+  Submarines.cpp
+  main.cpp
+  Создание кода...
+C:\Users\79284\source\repos\TP_1\Ship-database\TP_1\TP_1\Submarines.cpp(35): warning C4715: Submarines::operator=: значение возвращается не при всех путях выполнения
+C:\Users\79284\source\repos\TP_1\Ship-database\TP_1\TP_1\Sailboats.cpp(32): warning C4715: Sailboats::operator=: значение возвращается не при всех путях выполнения
+C:\Users\79284\source\repos\TP_1\Ship-database\TP_1\TP_1\Boats.cpp(30): warning C4715: Boats::operator=: значение возвращается не при всех путях выполнения
+  TP_1.vcxproj -> C:\Users\79284\source\repos\TP_1\Ship-database\TP_1\x64\Debug\TP_1.exe

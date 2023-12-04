@@ -1,0 +1,24 @@
+1)Sailboats:
+TypeOfSailboat = Parys
+title = Ky
+PeacefulOrMilitary = 1
+BodyLength = 1
+speed = 1
+crew = 1
+
+2)Sailboats:
+TypeOfSailboat = 2
+title = 2
+PeacefulOrMilitary = 1
+BodyLength = 2
+speed = 2
+crew = 2
+
+3)Sailboats:
+TypeOfSailboat = 3
+title = 3
+PeacefulOrMilitary = 0
+BodyLength = 3
+speed = 3
+crew = 3
+

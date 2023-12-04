@@ -1,0 +1,21 @@
+1)Boats:
+purpose = Ggg
+HousingMaterial = Hhh
+DrivingQualities = 1
+speed = 1
+crew = 1
+
+2)Boats:
+purpose = 2
+HousingMaterial = 2
+DrivingQualities = 2
+speed = 2
+crew = 2
+
+3)Boats:
+purpose = 3
+HousingMaterial = 3
+DrivingQualities = 3
+speed = 3
+crew = 3
+
